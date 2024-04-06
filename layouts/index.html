@@ -3,6 +3,7 @@
 {{ end }}
 
 {{ define "main" }}
+<div class="home_content">
     <main aria-role="main">
         <div>
             {{ if .Site.Params.Portrait.Path }}
@@ -20,4 +21,6 @@
             {{- end }}
         </div>
     </main>
+</div>
 {{ end }}
+

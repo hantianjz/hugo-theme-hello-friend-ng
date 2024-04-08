@@ -66,6 +66,7 @@
 
     &-item {
       border-bottom: 1px grey dashed;
+      max-width: 950px;
 
       &-inner {
         display: flex;
@@ -73,6 +74,15 @@
         align-items: baseline;
         padding: 0px 0;
         text-decoration: none;
+      }
+
+      &-info {
+        display: flex;
+      }
+
+      &-item-content {
+        display: flex;
+        max-width: inherit;
       }
     }
 

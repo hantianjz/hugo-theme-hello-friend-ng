@@ -22,7 +22,7 @@
                                         {{ .Date.Format .Site.Params.dateform }}
                                 </span>
                             <a href="{{.Permalink}}" class="post-item-inner">
-                                <span class="post-title">{{.Title}}</span>
+            <span class="post-title"><h1>{{.Title}}</h1></span>
                                 <span class="post-day">
                                     {{ if .Site.Params.dateformShort }}
                                         {{ time.Format .Site.Params.dateformShort .Date }}
@@ -32,7 +32,7 @@
                                 </span>
                             </a>
 
-                            <div>
+                            <div class="post-item-content">
                                 {{ .Content }}
                             </div>
                         </li>
